@@ -11,6 +11,7 @@ is_on = True
 
 while is_on:
     options = menu.get_items()
+    print("Type 'report' to see the Machine's resources, or type 'off' to shut down the machine")
     user_choice = input(f"What would you like? ({options}): ").lower()
     if user_choice == 'off':
         is_on = False
